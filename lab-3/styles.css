@@ -1,0 +1,79 @@
+h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+}
+.dashboard {
+    width: 800px;
+    height: 600px;
+    margin:auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr;
+    gap: 1rem;
+    color: white;
+    font-family: arial;
+}
+
+.grid-cell {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    height: 200px;
+    justify-content: center;
+}
+
+.grid-cell p, h2{
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+}
+
+.population {
+    background-image: url('./images/finland-8.jpg');
+    background-size: cover;
+    justify-content: flex-end;
+}
+
+
+.welcome {
+    background-image: url('./images/finland-2.jpg');
+    background-size: cover;
+    grid-column: 2 / span 3;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.gdp {
+    background-image: url('./images/finland-3.jpg');
+    background-size: cover;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.code {
+    justify-content: flex-start;
+    background-image: url('./images/finland-4.jpg');
+    background-size: cover;
+    width: 150px;
+}
+
+.govt {
+    background-image: url('./images/finland-1.jpg');
+    background-size: cover;
+    justify-content: flex-end;
+}
+
+.news {
+    background-image: url('./images/finland-5.jpg');
+    background-size: cover;
+}
+
+.news button {
+    align-self: flex-end;
+}
